@@ -33,8 +33,10 @@ jobs:
  
     - name: Run Java code
       run: java helloworld  # Run the compiled Java program
- 
-   # - name: Print secret key for debugging (only temporarily)
-    #  run: echo "The secret key is ${{ secrets.MY_SECRET_KEY }}"  # Access and print the secret key (for debugging purposes)
-     # env:
-      #  MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
+
+      
+      - name: Print secret key for debugging (only temporarily)
+      run: echo "The secret key is ${{ secrets.shruti0909 }}"  # Access and print the secret key (for debugging purposes)
+      env:
+        MY_SECRET_KEY: ${{ secrets.shruti0909 }}
+    
