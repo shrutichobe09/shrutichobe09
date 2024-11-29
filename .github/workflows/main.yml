@@ -29,12 +29,12 @@ jobs:
         javac -version  # Print the installed Java compiler version
  
     - name: Compile Java code
-      run: javac hello_world.java  # Compile the HelloWorld.java file
+      run: javac helloworld.java  # Compile the HelloWorld.java file
  
     - name: Run Java code
-      run: java hello_world  # Run the compiled Java program
+      run: java helloworld  # Run the compiled Java program
  
-    - name: Print secret key for debugging (only temporarily)
-      run: echo "The secret key is ${{ secrets.MY_SECRET_KEY }}"  # Access and print the secret key (for debugging purposes)
-      env:
-        MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
+   # - name: Print secret key for debugging (only temporarily)
+    #  run: echo "The secret key is ${{ secrets.MY_SECRET_KEY }}"  # Access and print the secret key (for debugging purposes)
+     # env:
+      #  MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
